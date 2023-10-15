@@ -1,0 +1,448 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ascend Bank - Register</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'assets/img/icon.png' %}">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="{% static 'assets/img/icon.png' %}" style="width: 80px; height: 80px;" >
+
+      <h1 class="logo"><a href="/">Ascend Bank</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Register</a></li>
+          <!--<li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>-->
+<!--          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
+          <li class="dropdown"><a href="#"><span>Branches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+<!--              <li><a href="#">Thiruvananthapuram</a></li>-->
+<!--              <li><a href="#">Pathanamthitta</a></li>-->
+<!--              <li><a href="#">Palakkad</a></li>-->
+<!--              <li><a href="#">Malappuram,</a></li>-->
+<!--              <li><a href="#">Kannur</a></li>-->
+
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Thiruvananthapuram"><span>Thiruvananthapuram</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Nedumangad">Nedumangadu</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Chirayinkeezhu">Chirayinkeezhu</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kattakada">Kattakada</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Neyyattinkara">Neyyattinkara</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Varkala">Varkala</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Pathanamthitta"><span>Pathanamthitta</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Adoor">Adoor</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Konni,_Kerala">Konni</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kozhencherry">Kozhenchery</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mallapally">Mallappally</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ranni,_Kerala">Ranni</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Palakkad"><span>Palakkad</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Alathur">Alathur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Chittur-Thathamangalam">Chittur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mannarkkad">Mannarkad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ottapalam">Ottappalam</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Pattambi">Pattambi</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Malappuram"><span>Malappuram</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Eranad">Ernad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kondotty">Kondotty</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Nilambur">Nilambur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ponnani">Ponnani</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Tirur">Tirur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Tirurangadi">Tirurangadi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Kannur"><span>Kannur</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Iritty">Iritty</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kannur">Kannur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Payyanur">Payyannur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Taliparamba">Taliparamba</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Thalassery">Thalassery</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Ernakulam"><span>Ernakulam</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Aluva">Aluva</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kochi">Kochi</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kothamangalam,_Kerala">Kothamangalam</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kunnathunad">kunnathunad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/North_Paravur">Paravur</a></li>
+                </ul>
+              </li>
+
+<!--              ------------->
+              <li class="dropdown"><a href="#"><span>New branch alert</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Idukki (Opening soon)...</a></li>
+                  <li><a href="#">Kottayam (Opening soon)...</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+<!--          <li><a class="getstarted scrollto" href="/login/#about">Login</a><br>-->
+            <a class="getstarted scrollto" href="/login">Login</a></li>
+          <a class="getstarted scrollto" href="/register/#about">Register</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <!--<h1>Where your financial goals are our top priority</h1-->>
+          <h1><h1>Welcome to Ascend Bank!</h1></h1>
+          <h2 style="text-align: justify;">Click "Get started" to join the ASCEND BANK family and start your financial journey.</h2>
+          <div>
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <a href="/" class="btn-get-started scrollto">Go Home</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+<!--     ======= Login to Your Financial Future =======-->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="{% static 'assets/img/reg_img.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3> Register To Start Your Financial Future </h3>
+            <p class="fst-italic">
+              Start banking better today. Create an account and manage your finances with ease.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Welcome to <a href="/" ><b>ASCEND BANK</b></a>, We're so glad you've decided to join us.</li>
+              <!--<li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>-->
+            </ul>
+
+
+
+            <!--message,warnings=================================================================================================================-->
+
+
+
+            <div>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+            <script>
+                {% if messages %}
+                    {% for message in messages %}
+                        {% if message.tags == 'error' %}
+                            window.location.href = "#about";
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </script>
+<!--            =========================================================================================================================-->
+
+
+<!--login form-->
+
+            <form action="/register/" method="post">
+                {% csrf_token %}
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="text" class="form-control" name="user_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Choose password</label>
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" name="password1" id="exampleInputPassword2">
+              </div>
+              <h5>If you already have an account, <a href="/login/#about">Login.</a></h5><br>
+
+              <button type="submit" class="read-more">Submit</button>
+              <a href="/" class="read-more">Go Home <i class="bi bi-long-arrow-right"></i></a>
+            </form><br>
+
+
+
+            <!--<a href="#" class="read-more">Go home <i class="bi bi-long-arrow-right"></i></a>-->
+            <!--<a href="#" class="read-more">Go Home <i class="bi bi-long-arrow-right"></i></a>-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+
+ <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Get in touch with us for all your banking needs.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Ascend Bank Ltd, M.G. Road,
+                Thiruvananthapuram, Kerala, 695001.<br></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ascendbank@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 90000 00000</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.976235891075!2d76.95145517688145!3d8.501687897016401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb79f9c848f%3A0xccbd7d3a342ebc02!2sReserve%20Bank%20of%20India%20Thiruvananthapuram%20Branch%20Office!5e0!3m2!1sen!2sus!4v1697054837302!5m2!1sen!2sus" width="100%" height="369px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ASCEND BANK</h3>
+            <p>
+              Ascend Bank Ltd, M.G. Road,<br>
+                Thiruvananthapuram, Kerala,<br>
+              695001.
+               <br><br>
+              <strong>Phone:</strong> +91 90000 00000<br>
+              <strong>Email:</strong> ascendbank@gmail.com<br>
+            </p>
+          </div>
+
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Savings Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Current Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Credit Cards</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Car Loan</li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gold Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Fixed Deposit</li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Financial Calculators</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Education Loan Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Car Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Two Wheeler EMI Calculato</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Recurring Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fixed Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SIP Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mutual Fund Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">More</a></li>
+
+
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Investor Relations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Regulatory Disclosure Section</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Safe Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI Kehta Hai</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI: Beware of Fictitious Offers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Money Transfer to India</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Internet Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mobile Banking</a></li>
+
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Ascend Bank</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+            Designed by <a href="#">Sreerag RS</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

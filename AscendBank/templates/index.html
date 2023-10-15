@@ -1,0 +1,819 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ascend Bank</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/icon.png' %}">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="/"><img src="{% static 'assets/img/icon.png' %}" style="width: 80px; height: 80px;" ></a>
+
+      <h1 class="logo" ><a href="/">Ascend Bank</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!--<li><a class="nav-link scrollto" href="#about">Authorize</a></li>-->
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#features">Features</a></li>
+
+
+<!--          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
+          <li class="dropdown"><a href="#"><span>Branches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+<!--              <li><a href="#">Thiruvananthapuram</a></li>-->
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Thiruvananthapuram"><span>Thiruvananthapuram</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Nedumangad">Nedumangadu</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Chirayinkeezhu">Chirayinkeezhu</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kattakada">Kattakada</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Neyyattinkara">Neyyattinkara</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Varkala">Varkala</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Pathanamthitta"><span>Pathanamthitta</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Adoor">Adoor</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Konni,_Kerala">Konni</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kozhencherry">Kozhenchery</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mallapally">Mallappally</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ranni,_Kerala">Ranni</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Palakkad"><span>Palakkad</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Alathur">Alathur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Chittur-Thathamangalam">Chittur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mannarkkad">Mannarkad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ottapalam">Ottappalam</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Pattambi">Pattambi</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Malappuram"><span>Malappuram</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Eranad">Ernad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kondotty">Kondotty</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Nilambur">Nilambur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Ponnani">Ponnani</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Tirur">Tirur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Tirurangadi">Tirurangadi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Kannur"><span>Kannur</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Iritty">Iritty</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kannur">Kannur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Payyanur">Payyannur</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Taliparamba">Taliparamba</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Thalassery">Thalassery</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Ernakulam"><span>Ernakulam</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Aluva">Aluva</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kochi">Kochi</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kothamangalam,_Kerala">Kothamangalam</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Kunnathunad">kunnathunad</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/North_Paravur">Paravur</a></li>
+                </ul>
+              </li>
+
+<!--              ------------->
+              <li class="dropdown"><a href="#"><span>New branch alert</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Idukki (Opening soon)...</a></li>
+                  <li><a href="#">Kottayam (Opening soon)...</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+<!--          <li><a class="getstarted scrollto" href="/login">Login</a><br>-->
+            <a class="getstarted scrollto" href="/login">Login</a></li>
+          <a class="getstarted scrollto" href="/register">Register</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+<!--LOGOUT MESSAGE ON HOME SCREEN=================================================-->
+    </div>
+  {% if messages %}
+    {% for message in messages %}
+            <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %} alert-dismissible fade show" role="alert" id="custom-alert">
+                {% if message.tags == 'success' %}
+                    <strong>Well done!</strong> {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <script>
+        // Add a click event listener to the document body
+        document.body.addEventListener("click", function() {
+            // Find the alert element by its ID
+            var alert = document.getElementById("custom-alert");
+            if (alert) {
+                // Dismiss the alert by clicking the close button
+                var closeButton = alert.querySelector(".btn-close");
+                if (closeButton) {
+                    closeButton.click();
+                }
+            }
+        });
+    </script>
+
+  </header><!-- End Header============================================== -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Where your financial goals are our top priority</h1>
+          <h2 style="text-align: justify;">Ascend Bank is a community-focused credit union that helps its members achieve their financial goals through a wide range of products, services, and resources</h2>
+          <div><a href="/login/#about" class="btn-get-started scrollto">Login</a>
+          <a href="/register/#about" class="btn-get-started scrollto">Register</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p><a href="#"><b>Ascend Bank</b></a>, provides innovative and customized financial solutions to help its customers achieve their financial goals.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Deposits</a></h4>
+              <p> Banks offer secure accounts for customers to save and manage their money.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">Loans and Credit</a></h4>
+              <p> Banks provide funding options to individuals and businesses for various financial needs</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Payments and Transfers</a></h4>
+              <p>Banks facilitate money movement and bill payments for convenient transactions</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">Investment Services</a></h4>
+              <p>Banks assist customers in growing their wealth through investments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">Financial Advisory</a></h4>
+              <p>Some banks offer guidance to help customers plan and manage their financial futures</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">Online and Mobile Banking</a></h4>
+              <p>Banks provide digital platforms for easy, on-the-go account access and transactions</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="193501" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Active Users</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Years in Operation</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="122" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Number of ATMs</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Branches</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Features</h2>
+          <p><b><a href="#">Ascend Bank</a></b>, Your one-stop shop for competitive interest rates, digital banking, cashback and rewards programs, and security.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-receipt"></i>
+              <h4>Competitive Interest Rates</h4>
+              <p style="text-align: justify;">Promote the bank's competitive interest rates for savings accounts, certificates of deposit (CDs), and other financial products. Let customers know they can earn more on their savings and investments, which can lead to higher returns and greater financial security.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-images"></i>
+              <h4>Digital Banking</h4>
+              <p style="text-align: justify;">Digital financial service that allows you and your businesses to perform various banking transactions and manage their accounts using a secure mobile platform for <b>Mobile Banking</b>, <b>WhatsApp Banking.</b> & <b>Net Banking</b></p>
+            </div>
+
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-images"></i>
+              <h4>Cashback and Rewards Programs</h4>
+              <p style="text-align: justify;">Promote the bank's cashback and rewards programs associated with its credit or debit cards. Highlight the benefits of earning cashback, points, or other rewards for everyday purchases. This can incentivize customers to choose your bank's cards for their transactions and gain additional value from their spending.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-shield"></i>
+              <h4>Security</h4>
+              <p style="text-align: justify;">Peace of mind for you as we have the most advanced technology & protection with <b>2 Factor i-safe authentication</b> & <b>End-to-end 256 bit Encryption.</b></p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+            <img src="{% static 'assets/img/features.svg' %}" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>See what our customers have to say about Ascend Bank.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p style="height: 310px; overflow: hidden;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  've been a customer of Ascend Bank for over 20 years, and I've always been impressed with their customer service and attention to detail. They've helped me with everything from opening my first savings account to getting a mortgage for my home. I highly recommend Ascend Bank to anyone looking for a reliable and trustworthy bank.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>John Smith</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p style="height: 310px; overflow: hidden;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I've been using Ascend Bank's mobile app for a few months now, and it's amazing! It's so easy to use, and it makes it easy to manage my finances on the go. I can check my account balance, transfer money, and pay bills all from my phone. I love it!.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p style="height: 310px; overflow: hidden;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I recently switched to Ascend Bank, and I'm so glad I did! Their fees are lower than my previous bank, and their customer service is top-notch. I recently had a problem with my ATM card, and a customer service representative was able to help me resolve the issue quickly and efficiently. I'm very happy with Ascend Bank, and I would definitely recommend them to others.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Susan Jones</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p style="height: 310px; overflow: hidden;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I've been a customer of Ascend Bank for several years now, and I've always been happy with their service. Their staff is friendly and knowledgeable, and they're always willing to go the extra mile to help me with my banking needs. I would definitely recommend Ascend Bank to anyone looking for a reliable and trustworthy bank.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Michael Brown</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p style="height: 310px; overflow: hidden;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I'm a small business owner, and Ascend Bank has been a great partner for my business. They've helped me with everything from getting a business loan to managing my cash flow. I'm very happy with their service, and I would definitely recommend them to other small businesses.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Banking solutions</h2>
+          <p>Ascend Bank's banking solutions are designed to help you manage your money wisely and grow your wealth over time.</p>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img01.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Mobile Banking</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img01.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img02.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Rewards Debit Card</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img02.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img03.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Wallet</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img03.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img04.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Money</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img04.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img05.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Visa Debit Card</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img05.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img06.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Credit</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img06.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img07.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Pay</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img07.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-all">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img08.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ascend Savings</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/img08.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Need help? Get answers to your common questions here.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">1. What types of accounts do you offer? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  We offer a variety of accounts to meet your needs, including checking accounts, savings accounts, credit cards, and loans. You can learn more about our accounts on our website or by speaking to a customer service representative.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">2. How do I open an account? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  To open an account, you can visit one of our branches or apply online. You will need to provide some basic information, such as your name, address, and Social Security number. You may also need to provide a deposit to open the account.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">3. What are your fees?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  We charge a variety of fees for our services, including monthly maintenance fees, transaction fees, and ATM fees. You can find a list of our fees on our website or by speaking to a customer service representative.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">4. How do I keep my account safe?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Here are a number of things you can do to keep your account safe, such as:<br><br>
+                  1) Creating a strong password and changing it regularly<br>
+                  2) Enabling two-factor authentication<br>
+                  3) Being careful about what information you share online<br>
+                  4) Avoiding phishing scams<br>
+                  5) Monitoring your account activity regularly<br>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">5. What should I do if I lose my debit card?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If you lose your debit card, you should contact your bank immediately to report it lost or stolen. Your bank will cancel the card and issue you a new one. You may also want to place a fraud alert on your account.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Get in touch with us for all your banking needs.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Ascend Bank Ltd, M.G. Road,
+                Thiruvananthapuram, Kerala, 695001.<br></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ascendbank@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 90000 00000</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.976235891075!2d76.95145517688145!3d8.501687897016401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb79f9c848f%3A0xccbd7d3a342ebc02!2sReserve%20Bank%20of%20India%20Thiruvananthapuram%20Branch%20Office!5e0!3m2!1sen!2sus!4v1697054837302!5m2!1sen!2sus" width="100%" height="369px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ASCEND BANK</h3>
+            <p>
+              Ascend Bank Ltd, M.G. Road,<br>
+                Thiruvananthapuram, Kerala,<br>
+              695001.
+               <br><br>
+              <strong>Phone:</strong> +91 90000 00000<br>
+              <strong>Email:</strong> ascendbank@gmail.com<br>
+            </p>
+          </div>
+
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Savings Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Current Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Credit Cards</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Car Loan</li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gold Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Fixed Deposit</li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Financial Calculators</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Education Loan Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Car Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Two Wheeler EMI Calculato</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Recurring Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fixed Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SIP Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mutual Fund Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">More</a></li>
+
+
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Investor Relations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Regulatory Disclosure Section</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Safe Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI Kehta Hai</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI: Beware of Fictitious Offers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Money Transfer to India</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Internet Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mobile Banking</a></li>
+
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Ascend Bank</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+            Designed by <a href="#">Sreerag RS</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

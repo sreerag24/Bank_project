@@ -1,0 +1,557 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ascend Bank - Form</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'assets/img/icon.png' %}">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="{% static 'assets/img/icon.png' %}" style="width: 80px; height: 80px;" >
+
+      <h1 class="logo"><a href="/">Ascend Bank</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Form</a></li>
+          <li class="dropdown"><a href="#"><span>Branches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Thiruvananthapuram</a></li>
+              <li><a href="#">Pathanamthitta</a></li>
+              <li><a href="#">Palakkad</a></li>
+              <li><a href="#">Malappuram,</a></li>
+              <li><a href="#">Kannur</a></li>
+              <li class="dropdown"><a href="#"><span>New branch alert</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Idukki (Opening soon)...</a></li>
+                  <li><a href="#">Kottayam (Opening soon)...</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <a class="getstarted scrollto" href="/logout">Logout</a><br>
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+          {% if user.is_authenticated %}
+          <h1>Hello, {{user.username}}</h1>
+          {% else %}
+          <h1>Where your financial goals are our top priority</h1>
+          {% endif %}
+
+          <h2 style="text-align: justify;">We use your data to protect your account from suspicious activity, verify your identity, and prevent fraud and identity theft.</h2>
+          <div><a href="#about" class="btn-get-started scrollto">Form</a>
+              <a href="/" class="btn-get-started scrollto">Go home</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+<!--     ======= Login to Your Financial Future =======-->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="{% static 'assets/img/data_img.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3> Login to Your Financial Journey</h3>
+            <p class="fst-italic">
+              We're here to help you bank better. Login to view your accounts, make transactions, and manage your finances with ease.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Welcome back to <a href="/" ><b>ASCEND BANK</b></a>, We're so glad to see you again {% if user.is_authenticated %} <b>{{user.username}}.</b> {% endif %}</li>
+              <!--<li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>-->
+            </ul>
+
+<!--login form+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <form class="row g-3" method="post">
+              {% csrf_token %}
+<!--              message section ><><><>>><><><><><><>-->
+<div>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}" role="alert">
+                {% if message.tags == 'success' %}
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p> {{message}}</p>
+                    <hr>
+                    <a href="/logout"><p class="mb-0">Click here to return to the home page.</p></a>
+                {% else %}
+                    Please fill in all required fields.
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+
+
+
+
+<!--                  <div>-->
+<!--                      {% if messages %}-->
+<!--                          {% for message in messages %}-->
+<!--                              <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}" role="alert">-->
+<!--                                  {{ message }}-->
+<!--                              </div>-->
+<!--                          {% endfor %}-->
+<!--                      {% endif %}-->
+<!--                  </div>-->
+
+
+              <!--<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>><>-->
+
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" value="{{ user.username }}" >
+            </div>
+            <div class="col-md-6">
+              <label for="inputDOB" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" name="inputDOB" id="inputDOB">
+              <div id="ageDisplay"></div>
+            </div>
+
+
+            <div class="col-12">
+              <label for="inputGender" class="form-label">Gender</label>
+
+
+              <div class="form-check form-switch">
+                <input class="form-check-input gender-option" type="radio" name="gender" id="male" value="Male" >
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+
+              <div class="form-check form-switch">
+                <input class="form-check-input gender-option" type="radio" name="gender" id="female" value="Female">
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+
+              <div class="form-check form-switch">
+                <input class="form-check-input gender-option" type="radio" name="gender" id="other" value="Other">
+                <label class="form-check-label" for="other">Other</label>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <label for="inputCountryCode" class="form-label">Country Code</label>
+              <select class="form-select" id="inputCountryCode">
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <option value="+49">+49</option>
+                <option value="+61">+61</option>
+                <option value="+65">+65</option>
+                <option value="+7">+7</option>
+                <option value="+81">+81</option>
+                <option value="+82">+82</option>
+                <option value="+86">+86</option>
+                <option value="+93">+93</option>
+                <option value="+994">+994</option>
+                <option value="+998">+998</option>
+                <option value="+64">+64</option>
+                <option value="+92">+92</option>
+                <option value="+94">+94</option>
+                <option value="+95">+95</option>
+                <option value="+971">+971</option>
+                <option value="+972">+972</option>
+                <option value="+974">+974</option>
+                <option value="+98">+98</option>
+                <!-- Add more country codes as needed -->
+              </select>
+            </div>
+            <div class="col-9">
+              <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+              <input type="text" name="PhoneNumber" class="form-control" id="inputPhoneNumber">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" name="Email" class="form-control" id="inputEmail">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" name="Address" class="form-control" id="inputAddress">
+            </div>
+
+            <div class="col-12">
+            <label for="inputBranch" class="form-label">District</label>
+            <select id="inputBranch" name="District" class="form-select">
+              <option selected>Choose District...</option>
+              <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value="Pathanamthitta">Pathanamthitta</option>
+              <option value="Palakkad">Palakkad</option>
+              <option value="Malappuram">Malappuram</option>
+              <option value="Kannur">Kannur</option>
+              <option value="Ernakulam">Ernakulam</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="inputSubDistrict" class="form-label">Branch</label>
+            <select id="inputSubDistrict" class="form-select">
+              <option selected>Choose Branch...</option>
+            </select>
+          </div>
+
+          <div class="col-6">
+            <label for="inputBranch" class="form-label">Account Type</label>
+            <select id="input Account" name="Account" class="form-select">
+              <option selected>Choose Account Type...</option>
+              <option value="Savings accounts">Savings accounts</option>
+              <option value="Checking accounts">Checking accounts</option>
+              <option value="Current accounts">Current accounts</option>
+              <option value="Business accounts">Business accounts</option>
+              <option value="International accounts">International accounts</option>
+
+            </select>
+          </div>
+
+      <script>
+      const subDistrictOptions = {
+        Thiruvananthapuram: ["Nedumangadu", "Chirayinkeezhu", "Kattakada", "Neyyattinkara", "Varkala"],
+        Pathanamthitta: ["Adoor", "Konni", "Kozhenchery", "Mallappally", "Ranni"],
+        Palakkad: ["Alathur", "Chittur", "Mannarkad", "Ottappalam", "Pattambi"],
+        Malappuram: ["Ernad", "Kondotty", "Nilambur", "Ponnani", "Tirur", "Tirurangadi"],
+        Kannur: ["Iritty", "Kannur", "Payyannur", "Taliparamba", "Thalassery"],
+        Ernakulam: ["Aluva", "Kochi", "Kothamangalam", "Kunnathunad", "Paravur"],
+      };
+
+      const branchDropdown = document.getElementById("inputBranch");
+      const subDistrictDropdown = document.getElementById("inputSubDistrict");
+
+      branchDropdown.addEventListener("change", function () {
+        const selectedBranch = branchDropdown.value;
+        subDistrictDropdown.innerHTML = ""; // Clear previous options
+
+        const subDistricts = subDistrictOptions[selectedBranch];
+        if (subDistricts) {
+          subDistricts.forEach((subDistrict) => {
+            const option = document.createElement("option");
+            option.value = subDistrict;
+            option.textContent = subDistrict;
+            subDistrictDropdown.appendChild(option);
+          });
+        } else {
+          const defaultOption = document.createElement("option");
+          defaultOption.value = "";
+          defaultOption.textContent = "Choose Sub-District...";
+          subDistrictDropdown.appendChild(defaultOption);
+        }
+      });
+      </script>
+
+
+
+      <div class="col-6">
+        <label class="form-label">Materials Provided</label><br>
+        <div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="debitCard">
+          <label class="form-check-label" for="debitCard">Debit Card</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="creditCard">
+          <label class="form-check-label" for="creditCard">Credit Card</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="chequeBook">
+          <label class="form-check-label" for="chequeBook">Cheque Book</label>
+        </div>
+        </div>
+
+
+
+      </div>
+      <div class="col-12">
+        <button type="submit" class="read-more">Submit</button>
+        <a href="/logout" class="read-more">Go home <i class="bi bi-long-arrow-right"></i></a>
+      </div>
+    </form>
+            <script>
+            document.getElementById("inputDOB").addEventListener("input", function () {
+              var dob = new Date(this.value);
+              var today = new Date();
+              var age = today.getFullYear() - dob.getFullYear();
+              document.getElementById("ageDisplay").textContent = "Age: " + age + " years";
+            });
+            </script>
+
+
+
+<!-- message and warnings=============================================================================-->
+
+
+
+
+
+
+
+
+<!--            <a href="#" class="read-more">Go home <i class="bi bi-long-arrow-right"></i></a>-->
+            <!--<a href="#" class="read-more">Register <i class="bi bi-long-arrow-right"></i></a>-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+     <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Get in touch with us for all your banking needs.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Ascend Bank Ltd, M.G. Road,
+                Thiruvananthapuram, Kerala, 695001.<br></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ascendbank@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 90000 00000</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.976235891075!2d76.95145517688145!3d8.501687897016401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb79f9c848f%3A0xccbd7d3a342ebc02!2sReserve%20Bank%20of%20India%20Thiruvananthapuram%20Branch%20Office!5e0!3m2!1sen!2sus!4v1697054837302!5m2!1sen!2sus" width="100%" height="369px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ASCEND BANK</h3>
+            <p>
+              Ascend Bank Ltd, M.G. Road,<br>
+                Thiruvananthapuram, Kerala,<br>
+              695001.
+               <br><br>
+              <strong>Phone:</strong> +91 90000 00000<br>
+              <strong>Email:</strong> ascendbank@gmail.com<br>
+            </p>
+          </div>
+
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Savings Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Current Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Credit Cards</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Car Loan</li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Gold Loan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Fixed Deposit</li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Financial Calculators</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Education Loan Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Personal Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Car Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Two Wheeler EMI Calculato</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home Loan EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Recurring Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fixed Deposit EMI Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SIP Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mutual Fund Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">More</a></li>
+
+
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Investor Relations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Regulatory Disclosure Section</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Safe Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI Kehta Hai</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RBI: Beware of Fictitious Offers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Money Transfer to India</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Internet Banking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mobile Banking</a></li>
+
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Ascend Bank</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="#">Sreerag RS</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
